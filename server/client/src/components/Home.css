@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  flex-direction: row;
+}
+
+.left_nav_wrapper {
+  flex: 0.2;
+  height: 100%;
+  position: fixed;
+  width: 200px;
+  /* Adjust the width as needed */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  /* Enable vertical scrolling for the left navigation */
+  padding: 20px;
+  /* Add padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline_wrapper {
+  flex: 0.8;
+  flex-grow: 1;
+  padding: 20px;
+  /* Add padding as needed */
+  overflow-y: auto;
+}

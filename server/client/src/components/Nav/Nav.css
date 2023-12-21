@@ -1,0 +1,73 @@
+.logo {
+  width: 100px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  color: black;
+  background-color: #f2f2f2; /* light gray background */
+  border: none; /* remove default button border */
+  padding: 10px 20px; /* add some padding */
+  text-align: center; /* center the text */
+  text-decoration: none; /* remove underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; /* add some margin */
+  cursor: pointer; /* change cursor on hover */
+  border-radius: 12px; /* rounded corners */
+  transition-duration: 0.4s;
+  display: flex; /* change from inline-block to flex */
+  align-items: center; /* vertically align items in the center */
+  justify-content: center; /* horizontally align items in the center */ /* transition effect */
+}
+
+.btn:hover {
+  background-color: #008cba; /* change background color on hover */
+  color: white; /* change text color on hover */
+}
+
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.input-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

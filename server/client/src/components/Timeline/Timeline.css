@@ -1,0 +1,16 @@
+/* Timeline.css */
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.Post {
+  margin-bottom: 16px;
+  /* Add some bottom margin between posts */
+}
