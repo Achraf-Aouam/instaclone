@@ -9,6 +9,7 @@ function Timeline() {
     try {
       const response = await fetch("http://localhost:3000/getPosts");
       const jsonData = await response.json();
+
       setposts(jsonData);
 
       // console.log(jsonData);
@@ -28,6 +29,7 @@ function Timeline() {
           key={post.post_id}
           post_id={post.post_id}
           postimage={post.post_pic}
+          U_username={post.u_username}
         />
       ))}
     </div>

@@ -62,8 +62,11 @@ const createPost = (request, response) => {
 
 const getposts = async (request, response) => {
   try {
-    const allposts = await pool.query("SELECT * FROM Post");
+    const allposts = await pool.query(
+      "SELECT Post.*, users.U_username FROM Post INNER JOIN users ON Post.U_id = Users.u_id"
+    );
     response.json(allposts.rows);
+    console.log(allposts.rows[0]);
   } catch (error) {
     console.error(error.message);
   }

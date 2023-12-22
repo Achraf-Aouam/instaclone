@@ -23,7 +23,7 @@ function Nav() {
     // get form values
     const postimage = event.target.elements.pictureLink.value;
     const caption = event.target.elements.caption.value;
-    const user_id = event.target.elements.userId.value;
+    const user_id = "1";
     // create a new post object
 
     try {
@@ -40,9 +40,6 @@ function Nav() {
     } catch (error) {
       console.error(error.message);
     }
-
-    // make a request to your backend to add the new post to the database
-    // ...
 
     closeModal();
   };
